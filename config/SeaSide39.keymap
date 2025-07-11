@@ -20,11 +20,95 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+        macro_0: to_layer_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LBKT>;
             label = "TO_LAYER_0";
+        };
+
+        macro_1: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp RBKT>;
+            label = "NEW_MACRO";
+        };
+
+        macro_2: macro_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RCTRL &kp UP_ARROW>;
+            label = "MACRO_2";
+        };
+
+        macro_3: macro_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_ARROW>;
+            label = "MACRO_3";
+        };
+
+        macro_4: macro_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp RIGHT_ARROW>;
+            label = "MACRO_4";
+        };
+
+        macro_5: macro_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp F>;
+            label = "MACRO_5";
+        };
+
+        macro_6: macro_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp SPACE>;
+            label = "MACRO_6";
+        };
+
+        macro_7: macro_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp ENTER>;
+            label = "MACRO_7";
+        };
+
+        macro_8: macro_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LCTRL &kp NUMBER_4>;
+            label = "MACRO_8";
+        };
+
+        macro_9: macro_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "MACRO_9";
+        };
+
+        macro_10: macro_10 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp TAB>;
+            label = "MACRO_10";
+        };
+
+        macro_11: macro_11 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp C>;
+            label = "MACRO_11";
+        };
+
+        macro_12: macro_12 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp SEMI>;
+            label = "MACRO_12";
         };
     };
 
@@ -32,7 +116,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&macro_0>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -64,10 +148,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12                      &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS         &kp MINUS
-&trans  &kp F5  &kp F6   &kp F7   &kp F8                       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK     &kp SLASH
-&trans  &kp F1  &kp F2   &kp F3   &kp F4                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACE  &kp COLON
-&trans  &trans  &trans   &trans   &trans   &trans      &trans  &kp NUMBER_0                                               &kp PERIOD
+&kp F9  &kp F10  &kp F11  &kp F12  &trans                         &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
+&kp F5  &kp F6   &kp F7   &kp F8   &kp COLON                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&kp F1  &kp F2   &kp F3   &kp F4   &kp SEMI                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp DOT
+&trans  &trans   &trans   &trans   &trans     &trans      &trans  &kp NUMBER_0                                            &kp PERIOD
             >;
         };
 
