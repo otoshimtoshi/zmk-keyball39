@@ -44,10 +44,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q         &kp W             &kp E               &kp R      &kp T                                                &kp Y            &kp U  &lt 0 I   &kp O     &lt 0 P
-&kp A           &kp S             &kp D               &kp F      &kp G                                                &kp H            &kp J  &kp K     &kp L     &kp ENTER
-&kp Z           &kp X             &kp C               &kp V      &kp B                                                &kp N            &kp M  &mkp MB1  &mkp MB3  &mkp MB2
-&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &lt 3 LANG2      &mt RIGHT_SHIFT LANG1  &lt 3 BACKSPACE                             &lt 0 ESCAPE
+&lt 3 Q         &kp W             &kp E               &kp R      &kp T                                       &kp Y                    &kp U  &kp I     &kp O        &kp P
+&kp A           &kp S             &kp D               &kp F      &kp G                                       &kp H                    &kp J  &kp K     &lt 3 L      &kp MINUS
+&kp Z           &kp X             &kp C               &kp V      &kp B                                       &kp N                    &kp M  &mkp MB1  &lt 3 COMMA  &kp PERIOD
+&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &mkp MB1      &lt 2 BACKSPACE  &mt RIGHT_COMMAND ENTER                                &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -55,10 +55,10 @@
 
         SYMBOL {
             bindings = <
-&kp PRCNT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp FSLH                             &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp AT     &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                            &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON
-&kp GRAVE  &kp TILDE   &kp MINUS      &kp EXCLAMATION  &kp QUESTION                         &kp PIPE        &kp LBKT              &kp RBKT               &kp SQT        &kp DOUBLE_QUOTES
-&trans     &trans      &trans         &trans           &trans        &trans      &kp COMMA  &kp PERIOD                                                                  &kp ESC
+&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR                         &kp PERCENT  &kp RCTRL      &kp AMPERSAND     &kp ASTERISK  &kp QUESTION
+&kp LBKT        &kp RBKT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                          &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH     &kp TILDE
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL             &kp COMMA              &kp SEMI                           &kp PIPE     &kp BACKSLASH  &kp PERIOD        &trans        &trans
+&trans          &trans           &trans                &trans                 &trans      &trans      &kp COMMA  &kp PERIOD                                                  &kp RIGHT_SHIFT
             >;
         };
 
