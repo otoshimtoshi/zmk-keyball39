@@ -71,21 +71,31 @@
         macro_4: macro_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp RIGHT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>;
+
             label = "MACRO_4";
         };
 
         macro_5: macro_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp F>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp F>;
+
             label = "MACRO_5";
         };
 
         macro_6: macro_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp SPACE>, <&macro_press>;
+            bindings = <&macro_press>, <&kp LCTRL &kp SPACE>;
 
             label = "MACRO_6";
         };
@@ -93,21 +103,35 @@
         macro_7: macro_7 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp ENTER>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp ENTER>;
+
             label = "MACRO_7";
         };
 
         macro_8: macro_8 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LCTRL &kp NUMBER_4>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LCTRL>,
+                <&macro_tap>,
+                <&kp NUMBER_4>;
+
             label = "MACRO_8";
         };
 
         macro_9: macro_9 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>,
+                <&macro_tap>;
+
             label = "MACRO_9";
         };
 
