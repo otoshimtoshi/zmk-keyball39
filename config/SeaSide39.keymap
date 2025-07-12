@@ -20,18 +20,18 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        macro_0: to_layer_0 {
+        macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND &kp LBKT>;
-            label = "TO_LAYER_0";
+            label = "MACRO_0";
         };
 
-        macro_1: new_macro {
+        macro_1: macro_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND &kp RBKT>;
-            label = "NEW_MACRO";
+            label = "MACRO_1";
         };
 
         macro_2: macro_2 {
