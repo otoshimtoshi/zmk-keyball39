@@ -23,28 +23,48 @@
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &mt LBKT LEFT_BRACKET>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp LBKT>;
+
             label = "MACRO_0";
         };
 
         macro_1: macro_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp RBKT>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp RBKT>;
+
             label = "MACRO_1";
         };
 
         macro_2: macro_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RCTRL &kp UP_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp RCTRL>,
+                <&macro_tap>,
+                <&kp UP_ARROW>;
+
             label = "MACRO_2";
         };
 
         macro_3: macro_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND &kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>;
+
             label = "MACRO_3";
         };
 
