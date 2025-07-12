@@ -23,7 +23,7 @@
         macro_0: macro_0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LBKT>;
+            bindings = <&kp LEFT_COMMAND &mt LBKT LEFT_BRACKET>;
             label = "MACRO_0";
         };
 
