@@ -27,7 +27,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp LBKT>;
+                <&kp LBKT>,
+                <&macro_release>;
 
             label = "MACRO_0";
         };
@@ -39,7 +40,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp RBKT>;
+                <&kp RBKT>,
+                <&macro_release>;
 
             label = "MACRO_1";
         };
@@ -51,7 +53,8 @@
                 <&macro_press>,
                 <&kp RCTRL>,
                 <&macro_tap>,
-                <&kp UP_ARROW>;
+                <&kp UP_ARROW>,
+                <&macro_release>;
 
             label = "MACRO_2";
         };
@@ -63,7 +66,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp LEFT_ARROW>;
+                <&kp LEFT_ARROW>,
+                <&macro_release>;
 
             label = "MACRO_3";
         };
@@ -75,7 +79,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp RIGHT_ARROW>;
+                <&kp RIGHT_ARROW>,
+                <&macro_release>;
 
             label = "MACRO_4";
         };
@@ -87,7 +92,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp F>;
+                <&kp F>,
+                <&macro_release>;
 
             label = "MACRO_5";
         };
@@ -95,7 +101,7 @@
         macro_6: macro_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL &kp SPACE>;
+            bindings = <&macro_press>, <&kp LCTRL &kp SPACE>, <&macro_release>;
 
             label = "MACRO_6";
         };
@@ -107,7 +113,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_ALT>,
                 <&macro_tap>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&macro_release>;
 
             label = "MACRO_7";
         };
@@ -119,7 +126,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp LCTRL>,
                 <&macro_tap>,
-                <&kp NUMBER_4>;
+                <&kp NUMBER_4>,
+                <&macro_release>;
 
             label = "MACRO_8";
         };
@@ -131,7 +139,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp NUMBER_4>;
+                <&kp NUMBER_4>,
+                <&macro_release>;
 
             label = "MACRO_9";
         };
@@ -139,7 +148,12 @@
         macro_10: macro_10 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL>, <&macro_tap>, <&kp TAB>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp TAB>,
+                <&macro_release>;
 
             label = "MACRO_10";
         };
@@ -147,7 +161,12 @@
         macro_11: macro_11 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LCTRL>, <&macro_tap>, <&kp C>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>;
 
             label = "MACRO_11";
         };
@@ -159,7 +178,8 @@
                 <&macro_press>,
                 <&kp LEFT_COMMAND &kp LEFT_SHIFT>,
                 <&macro_tap>,
-                <&kp SEMI>;
+                <&kp SEMI>,
+                <&macro_release>;
 
             label = "MACRO_12";
         };
