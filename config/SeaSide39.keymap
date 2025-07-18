@@ -233,17 +233,17 @@
             bindings = <
 &kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR                         &kp PERCENT  &kp RCTRL      &kp AMPERSAND     &kp ASTERISK  &kp QUESTION
 &kp LBKT        &kp RBKT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                          &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH     &kp TILDE
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL             &kp COMMA              &kp SEMI                           &kp PIPE     &kp BACKSLASH  &kp PERIOD        &trans        &trans
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL             &kp COMMA              &kp SEMI                           &kp SLASH    &kp BACKSLASH  &kp PERIOD        &trans        &trans
 &trans          &trans           &trans                &trans                 &trans      &trans      &kp COMMA  &kp PERIOD                                                  &kp RIGHT_SHIFT
             >;
         };
 
         NUM {
             bindings = <
-&kp F9  &kp F10  &kp F11  &kp F12  &trans                         &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
-&kp F5  &kp F6   &kp F7   &kp F8   &kp COLON                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp F1  &kp F2   &kp F3   &kp F4   &kp SEMI                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp DOT
-&trans  &trans   &trans   &trans   &trans     &trans      &trans  &kp NUMBER_0                                            &kp PERIOD
+&kp F9  &kp F10  &kp F11  &kp F12  &trans                         &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp MINUS
+&kp F5  &kp F6   &kp F7   &kp F8   &kp COLON                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &kp ASTERISK
+&kp F1  &kp F2   &kp F3   &kp F4   &kp SEMI                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &kp DOT
+&trans  &trans   &trans   &trans   &trans     &trans      &trans  &kp NUMBER_0                                         &kp PERIOD
             >;
         };
 
@@ -256,15 +256,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        Mouse {
-            bindings = <
-&mkp MB1  &mkp MB2  &trans  &trans  &trans                        &trans  &trans  &trans    &trans    &trans
-&trans    &trans    &trans  &trans  &trans                        &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans    &trans    &trans  &trans  &trans                        &trans  &trans  &trans    &trans    &trans
-&trans    &trans    &trans  &trans  &trans  &mkp MB1      &trans  &trans                              &trans
-            >;
         };
     };
 };
