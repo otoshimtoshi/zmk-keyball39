@@ -213,11 +213,12 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         lt_mouse_layer: lt_mouse_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_MOUSE";
             bindings = <&mo 3>, <&mkp MB1>;
-            
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
@@ -228,10 +229,10 @@
 
         default_layer {
             bindings = <
-&lt 3 Q         &kp W             &kp E               &kp R      &kp T                                       &kp Y        &kp U  &kp I     &kp O        &kp P
-&kp A           &kp S             &kp D               &kp F      &kp G                                       &kp H        &kp J  &kp K     &lt 3 L      &kp MINUS
-&kp Z           &kp X             &kp C               &kp V      &kp B                                       &kp N        &kp M  &mkp MB1  &lt 3 COMMA  &kp PERIOD
-&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &mkp MB1      &lt 2 BACKSPACE  &lt 1 ENTER                                &mkp MB2
+&lt 3 Q         &kp W             &kp E               &kp R      &kp T                                                    &kp Y        &kp U  &kp I     &kp O        &kp P
+&kp A           &kp S             &kp D               &kp F      &kp G                                                    &kp H        &kp J  &kp K     &lt 3 L      &kp MINUS
+&kp Z           &kp X             &kp C               &kp V      &kp B                                                    &kp N        &kp M  &mkp MB1  &lt 3 COMMA  &kp PERIOD
+&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &lt_mouse_layer 3 MB1      &lt 2 BACKSPACE  &lt 1 ENTER                                &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
