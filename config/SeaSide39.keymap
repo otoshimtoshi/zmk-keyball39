@@ -240,28 +240,28 @@
 
         SYMBOL {
             bindings = <
-&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR                         &kp PERCENT  &kp RCTRL      &kp AMPERSAND     &kp ASTERISK  &kp QUESTION
-&kp LBKT        &kp RBKT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                          &kp MINUS    &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH     &kp TILDE
-&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL             &kp COMMA              &kp SEMI                           &kp SLASH    &kp BACKSLASH  &kp PERIOD        &trans        &trans
-&trans          &trans           &trans                &trans                 &trans      &trans      &kp COMMA  &kp PERIOD                                                  &kp RIGHT_SHIFT
+&kp GRAVE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR                         &kp PERCENT       &kp RCTRL      &kp AMPERSAND     &kp ASTERISK  &kp QUESTION
+&kp LBKT        &kp RBKT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                          &kp RS(MINUS)     &kp LESS_THAN  &kp GREATER_THAN  &kp SLASH     &kp TILDE
+&kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL             &kp COMMA              &kp SEMI                           &kp SINGLE_QUOTE  &kp BACKSLASH  &kp PERIOD        &trans        &trans
+&trans          &trans           &trans                &trans                 &trans      &trans      &kp COMMA  &kp PERIOD                                                       &kp RIGHT_SHIFT
             >;
         };
 
         NUM {
             bindings = <
-&kp F9  &kp F10  &kp F11  &kp F12  &trans                         &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp PLUS   &kp MINUS
-&kp F5  &kp F6   &kp F7   &kp F8   &kp COLON                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH  &kp ASTERISK
-&kp F1  &kp F2   &kp F3   &kp F4   &kp SEMI                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &kp DOT
-&trans  &trans   &trans   &trans   &trans     &trans      &trans  &kp NUMBER_0                                         &kp PERIOD
+&kp F9  &kp F10  &kp F11  &kp F12  &trans                         &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK  &kp PLUS
+&kp F5  &kp F6   &kp F7   &kp F8   &kp COLON                      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH     &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &kp SEMI                       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp DOT
+&trans  &trans   &trans   &trans   &trans     &trans      &trans  &kp NUMBER_0                                            &kp PERIOD
             >;
         };
 
         FUNCTION {
             bindings = <
 &kp ESCAPE  &macro_11          &macro_7  &macro_8  &macro_9                             &macro_6      &trans          &trans          &kp HOME         &kp END
-&macro_0    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                            &trans        &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &trans
+&macro_0    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                            &trans        &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &bt BT_CLR
 &macro_1    &kp C_VOLUME_DOWN  &macro_3  &macro_5  &macro_4                             &macro_12     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
-&macro_6    &trans             &trans    &trans    &trans     &trans      &bt BT_SEL 0  &bt BT_SEL 1                                                   &bt BT_CLR
+&macro_6    &trans             &trans    &trans    &trans     &trans      &bt BT_SEL 0  &bt BT_SEL 1                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
