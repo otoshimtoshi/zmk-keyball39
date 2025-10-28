@@ -232,7 +232,7 @@
 &lt 3 Q         &kp W             &kp E               &kp R      &kp T                                                    &kp Y        &kp U  &kp I     &kp O        &kp P
 &kp A           &kp S             &kp D               &kp F      &kp G                                                    &kp H        &kp J  &kp K     &lt 3 L      &kp MINUS
 &kp Z           &kp X             &kp C               &kp V      &kp B                                                    &kp N        &kp M  &mkp MB1  &lt 3 COMMA  &kp PERIOD
-&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &lt_mouse_layer 3 MB1      &lt 2 BACKSPACE  &lt 1 ENTER                                &mkp MB2
+&kp LEFT_SHIFT  &kp LEFT_COMMAND  &mt LEFT_ALT LCTRL  &lt 1 TAB  &lt 2 SPACE  &lt_mouse_layer 3 MB1      &lt 4 BACKSPACE  &lt 1 ENTER                                &mkp MB2
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -258,13 +258,22 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &macro_11          &macro_7  &macro_8  &macro_9                             &macro_6      &macro_0        &macro_1        &kp HOME         &kp END
-&macro_6    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                            &trans        &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &bt BT_CLR
-&macro_6    &kp C_VOLUME_DOWN  &macro_3  &macro_5  &macro_4                             &macro_12     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
-&trans      &trans             &trans    &trans    &trans     &trans      &bt BT_SEL 0  &bt BT_SEL 1                                                   &trans
+&kp ESCAPE  &macro_11          &macro_7  &macro_8  &macro_9                       &macro_6   &macro_0        &macro_1        &kp HOME         &kp END
+&macro_6    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                      &trans     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &bt BT_CLR
+&macro_6    &kp C_VOLUME_DOWN  &macro_3  &macro_5  &macro_4                       &macro_12  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
+&trans      &trans             &trans    &trans    &trans     &trans      &trans  &trans                                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        Settings {
+            bindings = <
+&bt BT_SEL 0  &trans  &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1  &trans  &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 2  &trans  &trans  &trans      &trans                      &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 3  &trans  &trans  &bt BT_CLR  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
     };
 };
