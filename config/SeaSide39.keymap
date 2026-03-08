@@ -341,10 +341,10 @@
 
         DESIGN {
             bindings = <
-&trans  &trans  &trans    &trans    &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &design1  &trans    &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans                          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &design3  &design4  &design2      &trans  &trans                          &trans
+&trans  &trans  &trans    &trans    &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &design1  &trans    &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans                               &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &design3  &design4  &kp BACKSPACE      &trans  &trans                          &trans
             >;
         };
     };
