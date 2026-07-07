@@ -25,6 +25,11 @@
             bindings = <&lt 5 Z>;
             key-positions = <20 21>;
         };
+
+        Control {
+            bindings = <&kp LCTRL>;
+            key-positions = <30 33>;
+        };
     };
 
     macros {
