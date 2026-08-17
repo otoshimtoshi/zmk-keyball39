@@ -327,7 +327,7 @@
         FUNCTION {
             bindings = <
 &kp ESCAPE  &macro_11          &macro_7  &macro_8  &macro_9                       &macro_6   &macro_0        &macro_1        &kp HOME         &kp END
-&macro_6    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                      &trans     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &bt BT_CLR
+&macro_6    &kp C_VOLUME_UP    &macro_2  &mkp MB2  &macro_10                      &mkp MB1   &mkp MB1        &kp UP_ARROW    &kp PAGE_DOWN    &bt BT_CLR
 &macro_6    &kp C_VOLUME_DOWN  &macro_3  &macro_5  &macro_4                       &macro_12  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT
 &trans      &trans             &trans    &trans    &trans     &trans      &trans  &trans                                                      &trans
             >;
